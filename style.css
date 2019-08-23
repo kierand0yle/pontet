@@ -1,8 +1,8 @@
 /*General*/
 
 body {
-  font-family: 'PT Serif', serif;
   text-align: center;
+  font-family: Georgia W01 Regular;
 }
 
 h1 {
@@ -57,8 +57,8 @@ a:hover {
 .banner h1 {
   margin: 0;
   /*text-shadow: 1px 1px 1px rgba(0,0,0,0.2);*/
-  /*font-size: 32px;*/
-  font-weight: bold;
+  font-size: 60px;
+  /*font-weight: bold;*/
 }
 
 .banner p {
@@ -92,6 +92,7 @@ a:hover {
   border-radius: 4px;
   background: #5ba610;
   transition: background 0.3s ease;
+  font-size: 28px;
 }
 
 .btn-green:hover {
@@ -104,6 +105,7 @@ a:hover {
   /*padding: 50px;*/
   padding-top: 75px;
   padding-bottom: 75px;
+  font-size: 20px;
 }
 
 .content-block img{
@@ -156,5 +158,8 @@ a:hover {
 @media (min-width: 100px) and (max-width: 575px) {
   .footer-links a{
     text-align: left;
+  }
+  .banner h1{
+    font-size: 40px;
   }
 }
