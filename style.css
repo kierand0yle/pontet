@@ -9,6 +9,10 @@ h1 {
   color: #5ba610;
 }
 
+h5 {
+  font-weight: 300;
+}
+
 a {
   color: black;
 }
@@ -51,6 +55,8 @@ a:hover {
 .banner {
 /*  background-size: cover;
   background-position: center;*/
+  display: flex;
+  align-items: center;
   padding: 150px 0;
   /*background-color: #5ba610;*/
   background-color: white;
@@ -178,7 +184,7 @@ a:hover {
     padding: 0px !important;
   }
   .banner h1{
-    font-size: 39px;
+    font-size: 35px;
   }
   .content-block img{
     /*width: 90px;*/
@@ -203,3 +209,14 @@ a:hover {
     height: 172px;
   }
 }
+
+/*large devices*/
+
+/*@media (min-width: 1200px) {
+  .carousel-inner {
+    height: 172px;
+  }
+.banner {
+  height: 60vh;
+  }
+}*/
