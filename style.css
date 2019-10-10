@@ -2,7 +2,7 @@
 
 body {
   text-align: center;
-  font-family: Georgia W01 Regular;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -23,7 +23,7 @@ a:hover {
 
 .pontet {
   color: #5ba610 !important;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 
@@ -166,10 +166,11 @@ a:hover {
   margin: 2px;
 }
 
-
 #map {
   height: 50vh;
 }
+
+/*small devices */
 
 @media (min-width: 100px) and (max-width: 575px) {
   .footer-links a{
@@ -181,5 +182,24 @@ a:hover {
   }
   .content-block img{
     /*width: 90px;*/
+  }
+
+.testimonial {
+  width: 50%;
+}
+  .testimonial img {
+      width: 80%;
+    }
+  .carousel-inner {
+    /*width: 345px;*/
+    height: 310px;
+  }
+}
+
+/*medium devices and up*/
+
+@media (min-width: 768px) {
+  .carousel-inner {
+    height: 172px;
   }
 }
