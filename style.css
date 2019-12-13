@@ -73,7 +73,6 @@ header .overlay {
 
 }
 
-
 /*Navbar*/
 
 .navbar-pontet {
@@ -228,6 +227,11 @@ header p {
   header h1{
     font-size: 35px;
   }
+
+  .main-hc {
+    display: none;
+  }
+
   .content-block img{
     /*width: 90px;*/
   }
@@ -246,12 +250,16 @@ header p {
 
 /*medium devices and up*/
 
-@media (min-width: 768px) {
+@media (min-width: 575.1px) {
   .carousel-inner {
     height: 172px;
   }
   header h1{
     font-size: 35px;
+  }
+
+  .mob-hc {
+    display: none;
   }
 
 }
