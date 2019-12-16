@@ -92,6 +92,11 @@ header .overlay {
   padding: 8px 3vh !important;
 }
 
+.nav-link-top {
+  padding: 8px 3vh !important;
+  font-size: .8rem;
+}
+
 /*Banner */
 
 .banner {
@@ -167,11 +172,75 @@ header p {
   width: 190px;
 }
 
-.community {
+#community {
+  padding-top: 140px;
+  padding-bottom: 140px;
   background-image: url(img/community.jpg);
   background-size: cover;
   background-position: center;
   color: white !important;
+}
+
+.comm {
+  position: relative;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.events {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#event-cont {
+  position: relative;
+  z-index: 2;
+  height: 90vh;
+}
+
+#event-slides {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 90vh;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+#event-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+
+}
+
+.carousel-item {
+  /*min-height: 350px !important;*/
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#ev-car {
+  height: 100% !important;
 }
 
 /*Avatar*/
@@ -222,10 +291,30 @@ header p {
     padding: 0px !important;
   }
   header {
-    height: 100vh;
+    height: 90vh;
   }
+
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
   header h1{
     font-size: 35px;
+  }
+
+  .events {
+    display: none;
   }
 
   .main-hc {
@@ -259,6 +348,10 @@ header p {
   }
 
   .mob-hc {
+    display: none;
+  }
+
+  #community {
     display: none;
   }
 
